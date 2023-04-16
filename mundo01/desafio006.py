@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # crie um algorítimo que leia um número e mostre seu dobro, triplo e raiz quadrada
 
 n = int(input('digite um número: '))

@@ -1,5 +1,6 @@
-import ttkbootstrap as ttk
+# -*- coding: utf-8 -*-
 
+import ttkbootstrap as ttk
 
 class Album:
     def __init__(self, nome, ano, artista, faixas):
@@ -9,12 +10,8 @@ class Album:
         self.faixas = faixas
 
     def exibirInformacoes(self):
-        texto = f'''
-    Nome: {self.nome}
-    Ano: {self.ano}
-    Artista: {self.artista}
-    Faixas: {", ".join(self.faixas)}
-    '''
+        texto = 'Nome: {}\nAno: {}\nArtista: {}\nFaixas: {}'.format(
+            self.nome, self.ano, self.artista, ", ".join(self.faixas))
 
         texto_inf["text"] = texto
 
@@ -62,6 +59,5 @@ botao_adicionar.grid(column=1, row=1, padx=10, pady=10)
 
 texto_inf = ttk.Label(janela, text='')
 texto_inf.grid(column=1, row=3)
-
 
 janela.mainloop()
