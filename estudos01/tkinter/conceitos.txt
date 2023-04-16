@@ -1,0 +1,8 @@
+> criar janela principal
+
+
+começar com 
+< janela = tk()
+
+
+janela.mainloop()
