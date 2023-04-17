@@ -44,24 +44,27 @@ janela.title('setlists de álbuns')
 # criar a combobox com os nomes dos álbuns
 albuns_nomes = [album.nome for album in albuns]
 combobox = ttk.Combobox(janela, values=albuns_nomes)
-combobox.grid(column=1, row=0, padx=70, pady=50)
+combobox.grid(column=1, row=1, padx=70, pady=30)
 
 combobox.bind("<<ComboboxSelected>>", atualizar_album)
 
-# criar botões
-texto_album = ttk.Label(janela, text="Álbuns: ")
-texto_album.grid(column=0, row=0, padx=30, pady=50)
+# título
+texto_album = ttk.Label(janela, text="álbuns: ")
+texto_album.grid(column=1, row=0, padx=30, pady=10)
+texto_album.config(font=("Arial", 20, "bold"))
 
-botao_inf = ttk.Button(janela, text='Mostrar Informações')
+# criar botões
+botao_inf = ttk.Button(janela, text='Adicionar Novo Álbum',
+                       command='', bootstyle="info")
 botao_inf.grid(column=1, row=2, padx=10, pady=10)
 
 botao_adicionar = ttk.Button(
-    janela, text='Adicionar Novo Álbum', command='')
-botao_adicionar.grid(column=1, row=1, padx=10, pady=10)
+    janela, text='Adicionar Novo Álbum', command='', bootstyle="info")
+botao_adicionar.grid(column=1, row=3, padx=10, pady=10)
 
 
 texto_inf = ttk.Label(janela, text='')
-texto_inf.grid(column=1, row=3)
+texto_inf.grid(column=1, row=4)
 
 
 janela.mainloop()
