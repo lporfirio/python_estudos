@@ -54,12 +54,12 @@ texto_album.grid(column=1, row=0, padx=30, pady=10)
 texto_album.config(font=("Arial", 20, "bold"))
 
 # criar botões
-botao_inf = ttk.Button(janela, text='Adicionar Novo Álbum',
-                       command='', bootstyle="info")
+botao_inf = ttk.Button(janela, text='Mostrar Informações',
+                       command='', style="info")
 botao_inf.grid(column=1, row=2, padx=10, pady=10)
 
 botao_adicionar = ttk.Button(
-    janela, text='Adicionar Novo Álbum', command='', bootstyle="info")
+    janela, text='Adicionar Novo Álbum', command='', style="info")
 botao_adicionar.grid(column=1, row=3, padx=10, pady=10)
 
 
