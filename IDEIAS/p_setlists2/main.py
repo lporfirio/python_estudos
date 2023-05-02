@@ -1,6 +1,7 @@
 import ttkbootstrap as ttk
-from funcoes import Album
-from lista_de_albuns import albuns
+
+from funcoes import *
+from lista_albuns import albuns
 
 
 
@@ -29,5 +30,9 @@ texto_album.config(font=("Arial", 20, "bold"))
 
 texto_inf = ttk.Label(janela, text='')
 texto_inf.grid(column=1, row=4)
+
+# botão adicionar album
+botao_add = ttk.Button(janela, text="Adicionar Álbum", command= adicionar_album, style="info")
+botao_add.grid(column=1, row=5)
 
 janela.mainloop()

@@ -1,4 +1,4 @@
-from funcoes import Album
+from class_album import Album
 
 albuns = [
     Album('For Emma, Forever Ago', 2008, 'Bon Iver', [
